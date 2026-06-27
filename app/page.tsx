@@ -269,7 +269,7 @@ export default function Home() {
                       alt="Gamification Application"
                       className="w-full h-48 object-cover"
                     />
-                    <div className="p-4">
+                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                       <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
                         Gamification Application
                       </h2>
@@ -282,7 +282,7 @@ export default function Home() {
                       alt="Gamification Application"
                       className="w-full h-48 object-cover"
                     />
-                    <div className="p-4">
+                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                       <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
                         Mobile Chat App
                       </h2>
@@ -295,7 +295,7 @@ export default function Home() {
                       alt="Gamification Application"
                       className="w-full h-48 object-cover"
                     />
-                    <div className="p-4 bg-black dark:bg-white">
+                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                       <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
                         Iot Device and Software
                       </h2>
