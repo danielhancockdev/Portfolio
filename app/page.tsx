@@ -2,10 +2,11 @@
 
 
 import { useState, useEffect, useRef } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa6";
-import Link from "next/link";
+
 
 const tabs = ["About", "Projects", "Curriculum Vitae", "Contact Me"];
 
@@ -177,7 +178,8 @@ export default function Home() {
             {activeTab === "About" && (
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* IMAGE CARD */}
-                <div className="self-start bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
+                <div className="self-start bg-white dark:bg-zinc-900 border border-zinc-200 
+                dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
                   <Image
                     src="/profile.png"
                     alt="Profile"
@@ -187,7 +189,8 @@ export default function Home() {
                   />
                 </div>
                 {/* ABOUT CARD */}
-                <div className="lg:col-span-2 bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 shadow-sm max-h-[69vh] overflow-y-auto">
+                <div className="lg:col-span-2 bg-white dark:bg-zinc-900 border border-zinc-200 
+                dark:border-zinc-800 rounded-xl p-8 shadow-sm max-h-[69vh] overflow-y-auto">
                   <h1 className="text-3xl font-semibold mb-4">
                     About Me
                   </h1>
@@ -204,7 +207,8 @@ export default function Home() {
                       href="https://www.linkedin.com/in/daniel-hancock-960a853b4/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 dark:text-zinc-300 hover:text-blue-600 hover:scale-105 transition">
+                      className="p-2 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-700 
+                      dark:text-zinc-300 hover:text-blue-600 hover:scale-105 transition">
                       <FaLinkedin size={20} />
                     </a>
                   </div>
@@ -263,23 +267,28 @@ export default function Home() {
 
                 {/* Project Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Gamification Application"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900 hover:scale-105 transition-all duration-300">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Gamification Application
-                      </h2>
-                    </div>
-                  </div>
+                   <Link href="/Projects/GamificationProject">
+        <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300 cursor-pointer">
+
+          <img
+            src="/gamification.jfif"
+            alt="Gamification Application"
+            className="w-full h-48 object-cover"
+          />
+
+          <div className="p-4 bg-zinc-200 dark:bg-zinc-900 hover:scale-105 transition-all duration-300">
+            <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
+              Gamification Application
+            </h2>
+          </div>
+
+        </div>
+      </Link>
 
                   <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 shadow-md hover:scale-110 transition-all duration-300">
                     <img
                       src="/profile.png"
-                      alt="Gamification Application"
+                      alt="Mobile Chat App"
                       className="w-full h-48 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
@@ -289,7 +298,7 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
+                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
                     <img
                       src="/profile.png"
                       alt="Gamification Application"
@@ -301,19 +310,19 @@ export default function Home() {
                       </h2>
                     </div>
                   </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
+                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
                     <img
                       src="/profile.png"
                       alt="Placeholder 4"
                       className="w-full h-48 object-cover"
                     />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900 hover:scale-105 transition-all duration-300">
+                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                       <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
                         Placeholder 4
                       </h2>
                     </div>
                   </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
+                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
                     <img
                       src="/profile.png"
                       alt="Placeholder 5"
@@ -325,7 +334,7 @@ export default function Home() {
                       </h2>
                     </div>
                   </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
+                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
                     <img
                       src="/profile.png"
                       alt="Placeholder 6"
