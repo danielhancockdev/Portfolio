@@ -271,7 +271,7 @@ export default function Home() {
         <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300 cursor-pointer">
 
           <img
-            src="/gamification.jfif"
+            src="/gamification.png"
             alt="Gamification Application"
             className="w-full h-48 object-cover"
           />
