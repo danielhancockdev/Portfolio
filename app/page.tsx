@@ -2,13 +2,12 @@
 
 
 import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { FaLinkedin } from "react-icons/fa6";
+import AuroraBackground from "./Components/Background/AuroraBackground";
 
 
-const tabs = ["About", "Projects", "Curriculum Vitae", "Contact Me"];
 
 export default function Home() {
   const router = useRouter();
@@ -16,161 +15,11 @@ export default function Home() {
   const [activeTab, setActiveTab] = useState("About");
   const [darkMode, setDarkMode] = useState(true);
 
-  const [mouse, setMouse] = useState({ x: 0.5, y: 0.5 });
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      const nx = e.clientX / window.innerWidth;
-      const ny = e.clientY / window.innerHeight;
-
-      setMouse({ x: nx, y: ny });
-    };
-
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
-  }, []);
-
-
-  useEffect(() => {
-    if (darkMode) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  }, [darkMode]);
 
   return (
-    <main className="relative min-h-screen overflow-hidden bg-zinc-200 dark:bg-zinc-950 text-zinc-900 dark:text-white">
-
-      {/* AURORA BACKGROUND */}
-
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-
-        {/* LEFT CLOUD */}
-        <div
-          className="absolute top-[-250px] left-[-250px] w-[800px] h-[800px]
-      blur-[220px] rounded-full transition-colors duration-500"
-          style={{
-            backgroundColor: darkMode
-              ? "rgba(34,197,94,0.35)"
-              : "rgba(255, 0, 0, 0.5)",
-
-            transform: `
-        translate(
-          ${((mouse.x - 0.5) * Math.abs(mouse.y - 0.5) * 2) * -260}px,
-          ${((mouse.y - 0.5) * Math.abs(mouse.x - 0.5) * 2) * -260}px
-        )
-      `,
-          }}
-        />
-        {/* RIGHT CLOUD */}
-        <div
-          className="absolute bottom-[-250px] right-[-250px] w-[900px] h-[900px]
-      blur-[240px] rounded-full transition-colors duration-500"
-          style={{
-            backgroundColor: darkMode
-              ? "rgba(16,185,129,0.30)"
-              : "rgba(255, 30, 0, 0.55)",
-
-            transform: `
-        translate(
-          ${((mouse.x - 0.5) * Math.abs(mouse.x - 0.5)) * 520}px,
-          ${((mouse.y - 0.5) * Math.abs(mouse.y - 0.5)) * 520}px
-        )
-      `,
-          }}
-        />
-        {/* CENTER CLOUD */}
-        <div
-          className="absolute top-[30%] left-[50%] w-[650px] h-[650px]
-      blur-[200px] rounded-full transition-colors duration-500"
-          style={{
-            backgroundColor: darkMode
-              ? "rgba(132,204,22,0.25)"
-              : "rgba(255, 17, 0, 0.45)",
-
-            transform: `
-        translate(
-          ${(Math.sin(mouse.x * Math.PI * 2) * 120) + (mouse.x - 0.5) * 180}px,
-          ${(Math.cos(mouse.y * Math.PI * 2) * 120) + (mouse.y - 0.5) * 180}px
-        )
-      `,
-          }}
-        />
-
-      </div>
+    <main className="relative min-h-screen overflow-hidden text-zinc-900 dark:text-white">
       {/* CONTENT WRAPPER */}
       <div className="relative z-10">
-        <nav className="w-full flex items-center justify-between px-6 py-5
-  bg-white/80 dark:bg-zinc-900/80
-  text-zinc-900 dark:text-white
-  backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800
-  sticky top-0 z-50 transition-colors duration-300">
-
-          {/* LEFT (optional spacer / logo area) */}
-          <div className="w-10" />
-
-          {/* CENTER (tabs + tools grouped together) */}
-          <div className="flex items-center gap-4">
-
-            {/* TABS */}
-            <div className="flex gap-3">
-              {tabs.map((tab) => (
-                <button
-                  key={tab}
-                  onClick={() => setActiveTab(tab)}
-                  className={`px-5 py-2 text-sm font-medium border rounded-md transition-all duration-200
-            ${activeTab === tab
-                      ? "bg-zinc-900 text-white border-zinc-900 dark:bg-white dark:text-black dark:border-white"
-                      : "border-zinc-300 dark:border-zinc-700 text-zinc-700 dark:text-zinc-300 hover:bg-zinc-200 dark:hover:bg-zinc-800"
-                    }`}
-                >
-                  {tab}
-                </button>
-              ))}
-            </div>
-
-            {/* TOOLS DROPDOWN */}
-            <div className="relative">
-              <button
-                onClick={() => setToolsOpen(!toolsOpen)}
-                className="px-5 py-2 text-sm font-medium border rounded-md transition-all duration-200
-          border-zinc-300 dark:border-zinc-700
-          text-zinc-700 dark:text-zinc-300
-          hover:bg-zinc-200 dark:hover:bg-zinc-800"
-              >
-                Tools ▾
-              </button>
-
-              {toolsOpen && (
-                <div className="absolute mt-2 w-48 border rounded-md bg-white dark:bg-zinc-900 shadow-md z-50">
-
-                  <button
-                    onClick={() => {
-                      router.push("/development-dashboard");
-                      setToolsOpen(false);
-                    }}
-                    className="block w-full text-left px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800"
-                  >
-                    Developer Dashboard
-                  </button>
-
-                </div>
-              )}
-            </div>
-
-          </div>
-
-          {/* RIGHT (theme toggle) */}
-          <button
-            onClick={() => setDarkMode(!darkMode)}
-            className="px-3 py-2 text-sm border rounded-md border-zinc-300 dark:border-zinc-700
-      hover:bg-zinc-200 dark:hover:bg-zinc-800 transition"
-          >
-            {darkMode ? "Light" : "Dark"}
-          </button>
-
-        </nav>
-
         {/* PAGE CONTENT */}
         <div className="px-6 py-12 flex flex-col">
           <div className="mx-auto w-full max-w-7xl space-y-8">
@@ -255,121 +104,7 @@ export default function Home() {
                 </div>
               </div>
             )}
-
-            {activeTab === "Projects" && (
-              <div className="lg:col-span-2 space-y-6">
-                {/* Projects Header Box */}
-                <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 shadow-sm">
-                  <h1 className="text-2xl font-semibold text-center text-zinc-900 dark:text-white">
-                    Projects
-                  </h1>
-                </div>
-
-                {/* Project Cards */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                   <Link href="/Projects/GamificationProject">
-        <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300 cursor-pointer">
-
-          <img
-            src="/gamification.png"
-            alt="Gamification Application"
-            className="w-full h-48 object-cover"
-          />
-
-          <div className="p-4 bg-zinc-200 dark:bg-zinc-900 hover:scale-105 transition-all duration-300">
-            <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-              Gamification Application
-            </h2>
-          </div>
-
-        </div>
-      </Link>
-
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 shadow-md hover:scale-110 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Mobile Chat App"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Mobile Chat App
-                      </h2>
-                    </div>
-                  </div>
-
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Gamification Application"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900 ">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Iot Device and Software
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Placeholder 4"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Placeholder 4
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Placeholder 5"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Placeholder 5
-                      </h2>
-                    </div>
-                  </div>
-                  <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
-                    <img
-                      src="/profile.png"
-                      alt="Placeholder 6"
-                      className="w-full h-48 object-cover"
-                    />
-                    <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
-                      <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                        Placeholder 6
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            )}
-            {/* CV */}
-            {activeTab === "Curriculum Vitae" && (
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl overflow-hidden">
-                <object
-                  data="/cv.pdf#view=FitH"
-                  type="application/pdf"
-                  className="w-full h-[85vh]" />
-              </div>
-            )}
-            {/* CONTACT */}
-            {activeTab === "Contact Me" && (
-              <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 shadow-sm">
-                <h1 className="text-2xl font-semibold mb-4">
-                  Contact
-                </h1>
-                <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-                  Email: danielhancock.dev@gmail.com <br />
-                  Phone: +44 7847 476241
-                </p>
-              </div>
-            )}
+            
           </div>
         </div>
       </div>
