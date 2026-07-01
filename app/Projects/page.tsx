@@ -3,15 +3,9 @@ import Link from "next/link";
 export default function ProjectsPage() {
     return (
         <div className="lg:col-span-2 space-y-6">
-            {/* Projects Header Box */}
-            <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 shadow-sm">
-                <h1 className="text-2xl font-semibold text-center text-zinc-900 dark:text-white">
-                    Projects
-                </h1>
-            </div>
 
             {/* Project Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 mr-6 ml-6">
                 
                 <Link href="/Projects/GamificationProject">
                     <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300 cursor-pointer">

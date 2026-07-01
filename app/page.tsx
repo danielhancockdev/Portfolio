@@ -12,19 +12,17 @@ import AuroraBackground from "./Components/Background/AuroraBackground";
 export default function Home() {
   const router = useRouter();
   const [toolsOpen, setToolsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("About");
   const [darkMode, setDarkMode] = useState(true);
 
 
   return (
-    <main className="relative min-h-screen overflow-hidden text-zinc-900 dark:text-white">
+    <div className="relative min-h-screen overflow-hidden text-zinc-900 dark:text-white">
       {/* CONTENT WRAPPER */}
       <div className="relative z-10">
         {/* PAGE CONTENT */}
         <div className="px-6 py-12 flex flex-col">
           <div className="mx-auto w-full max-w-7xl space-y-8">
             {/* ABOUT */}
-            {activeTab === "About" && (
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* IMAGE CARD */}
                 <div className="self-start bg-white dark:bg-zinc-900 border border-zinc-200 
@@ -103,11 +101,10 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            )}
             
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }

@@ -12,7 +12,7 @@ export default function Navbar() {
   const { darkMode, toggleTheme } = useTheme();
 
   return (
-    <nav className="w-full flex items-center justify-between px-6 py-5 bg-white/100 dark:bg-zinc-900/100 text-zinc-900 dark:text-white 
+    <nav className="w-full flex items-center justify-between px-6 py-5 bg-white/100 dark:bg-zinc-900/100 text-zinc-900 dark:text-white
       backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 sticky top-0 z-50 transition-colors duration-300">
 
       {/* LEFT */}
