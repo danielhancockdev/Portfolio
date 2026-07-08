@@ -12,7 +12,7 @@ export default function ProjectsPage() {
                         <img
                             src="/gamification.png"
                             alt="Gamification Application"
-                            className="w-full h-48 object-cover"
+                            className="w-full h-72 object-cover"
                         />
                         <div className="p-4 bg-zinc-200 dark:bg-zinc-900 hover:scale-105 transition-all duration-300">
                             <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
@@ -22,37 +22,37 @@ export default function ProjectsPage() {
                     </div>
                 </Link>
 
-                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 shadow-md hover:scale-110 transition-all duration-300">
+                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 shadow-md hover:scale-105 transition-all duration-300">
                     <img
                         src="/profile.png"
                         alt="Mobile Chat App"
-                        className="w-full h-48 object-cover"
+                        className="w-full h-72 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                         <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                            Mobile Chat App
+                            Placeholder 2
                         </h2>
                     </div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
+                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
                         src="/profile.png"
                         alt="IoT Device and Software"
-                        className="w-full h-48 object-cover"
+                        className="w-full h-72 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                         <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
-                            IoT Device and Software
+                            Placeholder 3
                         </h2>
                     </div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
+                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
                         src="/profile.png"
                         alt="Placeholder 4"
-                        className="w-full h-48 object-cover"
+                        className="w-full h-72 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                         <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
@@ -61,11 +61,11 @@ export default function ProjectsPage() {
                     </div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
+                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
                         src="/profile.png"
                         alt="Placeholder 5"
-                        className="w-full h-48 object-cover"
+                        className="w-full h-72 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                         <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">
@@ -74,11 +74,11 @@ export default function ProjectsPage() {
                     </div>
                 </div>
 
-                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300">
+                <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
                         src="/profile.png"
                         alt="Placeholder 6"
-                        className="w-full h-48 object-cover"
+                        className="w-full h-72 object-cover"
                     />
                     <div className="p-4 bg-zinc-200 dark:bg-zinc-900">
                         <h2 className="text-lg font-semibold text-center text-zinc-900 dark:text-white">

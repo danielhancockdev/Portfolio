@@ -24,35 +24,35 @@ export default function Navbar() {
         <div className="flex gap-3">
   <Link
     href="/"
-    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+    className="px-5 py-2 text-m font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     About
   </Link>
 
   <Link
     href="/UniversityTranscript"
-    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+    className="px-5 py-2 text-m font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     University Transcript
   </Link>
 
   <Link
     href="/Projects"
-    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+    className="px-5 py-2 text-m font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     Projects
   </Link>
 
   <Link
     href="/CV"
-    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+    className="px-5 py-2 text-m font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     CV
   </Link>
 
   <Link
     href="/Contact"
-    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+    className="px-5 py-2 text-m font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     Contact
   </Link>
@@ -62,7 +62,7 @@ export default function Navbar() {
         <div className="relative">
           <button
             onClick={() => setToolsOpen(!toolsOpen)}
-            className="px-5 py-2 text-sm font-medium border rounded-md
+            className="px-5 py-2 text-m font-medium border rounded-md
               border-zinc-300 dark:border-zinc-700
               text-zinc-700 dark:text-zinc-300
               hover:bg-zinc-200 dark:hover:bg-zinc-800"
@@ -92,7 +92,7 @@ export default function Navbar() {
       {/* RIGHT */}
       <button
   onClick={toggleTheme}
-  className="px-3 py-2 text-sm border rounded-md border-zinc-300 dark:border-zinc-700
+  className="px-3 py-2 text-m border rounded-md border-zinc-300 dark:border-zinc-700
   hover:bg-zinc-200 dark:hover:bg-zinc-800 transition"
 >
   {darkMode ? "Light" : "Dark"}

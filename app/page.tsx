@@ -10,11 +10,6 @@ import AuroraBackground from "./Components/Background/AuroraBackground";
 
 
 export default function Home() {
-  const router = useRouter();
-  const [toolsOpen, setToolsOpen] = useState(false);
-  const [darkMode, setDarkMode] = useState(true);
-
-
   return (
     <div className="relative min-h-screen overflow-hidden text-zinc-900 dark:text-white">
       {/* CONTENT WRAPPER */}
@@ -25,8 +20,8 @@ export default function Home() {
             {/* ABOUT */}
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* IMAGE CARD */}
-                <div className="self-start bg-white dark:bg-zinc-900 border border-zinc-200 
-                dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
+                <div className="self-center bg-white dark:bg-zinc-900 border border-zinc-200 
+dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
                   <Image
                     src="/profile.png"
                     alt="Profile"
