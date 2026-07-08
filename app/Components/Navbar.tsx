@@ -8,7 +8,6 @@ import Link from "next/link";
 export default function Navbar() {
   const router = useRouter();
   const [toolsOpen, setToolsOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState("About");
   const { darkMode, toggleTheme } = useTheme();
 
   return (
@@ -28,6 +27,13 @@ export default function Navbar() {
     className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
   >
     About
+  </Link>
+
+  <Link
+    href="/UniversityTranscript"
+    className="px-5 py-2 text-sm font-medium border rounded-md border-zinc-300 dark:border-zinc-700 hover:bg-zinc-200 dark:hover:bg-zinc-800"
+  >
+    University Transcript
   </Link>
 
   <Link
