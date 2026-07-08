@@ -4,25 +4,74 @@ export default function GamificationProjectPage() {
       <div className="max-w-6xl mx-auto space-y-10">
 
         {/* INTRO CARD */}
-        <section className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-8 shadow-sm">
-          <h1 className="text-4xl font-bold mb-4">
-            Gamification Application
-          </h1>
+        {/* TOP INTRO SECTION */}
+<section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
 
-          <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
-            This project was developed as part of my Computer Science dissertation.
-            The aim of the application was to explore how gamification techniques
-            can improve user engagement and motivation through the use of
-            achievements, rewards, and progress tracking systems.
-          </p>
+  {/* DESCRIPTION CARD */}
+  <div className="lg:col-span-2 bg-white dark:bg-zinc-900 
+    border border-zinc-200 dark:border-zinc-800 
+    rounded-xl p-8 shadow-sm">
 
-          <p className="mt-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
-            The application was built using modern development practices and
-            focused on creating an interactive user experience while evaluating
-            the effectiveness of gamification features.
-          </p>
-        </section>
+    <h1 className="text-4xl font-bold mb-4">
+      Gamification Application
+    </h1>
 
+    <p className="text-zinc-700 dark:text-zinc-300 leading-relaxed">
+      This project was developed as part of my Computer Science dissertation.
+      The aim of the application was to investigate how gamification techniques
+      can improve user engagement and motivation through features such as
+      achievements, rewards, and progress tracking.
+    </p>
+
+    <p className="mt-4 text-zinc-700 dark:text-zinc-300 leading-relaxed">
+      The application focused on designing an interactive experience that
+      encourages users to complete tasks while providing feedback through
+      gamified elements.
+    </p>
+
+  </div>
+
+
+  {/* STACK CARD */}
+  <div className="bg-white dark:bg-zinc-900 
+    border border-zinc-200 dark:border-zinc-800 
+    rounded-xl p-8 shadow-sm">
+
+    <h2 className="text-2xl font-semibold mb-4">
+      Technology Stack
+    </h2>
+
+    <ul className="space-y-3 text-zinc-700 dark:text-zinc-300">
+
+      <li>
+        <span className="font-semibold">Frontend:</span>
+        <br />
+        React, Next.js, TypeScript, Tailwind CSS
+      </li>
+
+      <li>
+        <span className="font-semibold">Backend:</span>
+        <br />
+        Node.js, .NET
+      </li>
+
+      <li>
+        <span className="font-semibold">Database:</span>
+        <br />
+        MySQL / Firebase
+      </li>
+
+      <li>
+        <span className="font-semibold">Tools:</span>
+        <br />
+        Git, GitHub, Visual Studio Code
+      </li>
+
+    </ul>
+
+  </div>
+
+</section>
 
         {/* FEATURE CARD 1 */}
         <section className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center 

@@ -80,7 +80,7 @@ export default function Navbar() {
                 }}
                 className="block w-full text-left px-4 py-2 hover:bg-zinc-100 dark:hover:bg-zinc-800"
               >
-                Mini Assistant
+                Mini Assistant (WIP)
               </button>
 
             </div>

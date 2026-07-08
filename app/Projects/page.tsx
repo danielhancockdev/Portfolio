@@ -24,7 +24,7 @@ export default function ProjectsPage() {
 
                 <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 shadow-md hover:scale-105 transition-all duration-300">
                     <img
-                        src="/profile.png"
+                        src="/placeholder.png"
                         alt="Mobile Chat App"
                         className="w-full h-72 object-cover"
                     />
@@ -37,7 +37,7 @@ export default function ProjectsPage() {
 
                 <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
-                        src="/profile.png"
+                        src="/placeholder.png"
                         alt="IoT Device and Software"
                         className="w-full h-72 object-cover"
                     />
@@ -50,7 +50,7 @@ export default function ProjectsPage() {
 
                 <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
-                        src="/profile.png"
+                        src="placeholder.png"
                         alt="Placeholder 4"
                         className="w-full h-72 object-cover"
                     />
@@ -63,7 +63,7 @@ export default function ProjectsPage() {
 
                 <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
-                        src="/profile.png"
+                        src="placeholder.png"
                         alt="Placeholder 5"
                         className="w-full h-72 object-cover"
                     />
@@ -76,7 +76,7 @@ export default function ProjectsPage() {
 
                 <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-105 transition-all duration-300">
                     <img
-                        src="/profile.png"
+                        src="placeholder.png"
                         alt="Placeholder 6"
                         className="w-full h-72 object-cover"
                     />
