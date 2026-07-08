@@ -40,7 +40,7 @@ export default function MiniAssistantPage() {
 
      setMessages((prev) => [
   ...prev,
-  { role: "ai", text: data.reply ?? "No response from AI" },
+  { role: "ai", text: data.reply ?? "No response from Gemini" },
 ]);
     } catch (err) {
       setMessages((prev) => [
