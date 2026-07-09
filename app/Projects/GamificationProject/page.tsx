@@ -81,7 +81,7 @@ export default function GamificationProjectPage() {
 
   <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm">
     <img
-      src="/project1/loginpage.png"
+      src="/project1/loginpage.PNG"
       alt="Application homepage"
       className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
     />
@@ -152,7 +152,7 @@ export default function GamificationProjectPage() {
   </div>
   <div className="bg-white dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm">
     <img
-      src="/project1/homepage.png"
+      src="/project1/homepage.PNG"
       alt="Achievement system"
       className="w-full rounded-lg border border-zinc-200 dark:border-zinc-700"
     />

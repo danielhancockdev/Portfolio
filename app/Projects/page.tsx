@@ -10,7 +10,7 @@ export default function ProjectsPage() {
                 <Link href="/Projects/GamificationProject">
                     <div className="rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-700 hover:scale-110 transition-all duration-300 cursor-pointer">
                         <img
-                            src="/gamification.png"
+                            src="/gamification.PNG"
                             alt="Gamification Application"
                             className="w-full h-72 object-cover"
                         />
