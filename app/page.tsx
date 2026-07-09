@@ -93,6 +93,14 @@ dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
                         MySQL • Firebase • Azure
                       </p>
                     </div>
+                    <div>
+                      <h3 className="text-lg font-medium text-zinc-800 dark:text-zinc-200 mb-1">
+                        Software Engineering
+                      </h3>
+                      <p className="text-zinc-600 dark:text-zinc-400">
+                        Full Stack • OOP • AGILE • CI/CD
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

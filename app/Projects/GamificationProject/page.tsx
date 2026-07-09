@@ -2,8 +2,8 @@ export default function GamificationProjectPage() {
   return (
     <main className="min-h-screen px-6 py-12 text-zinc-900 dark:text-white">
       <div className="max-w-6xl mx-auto space-y-10">
-<section className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-  <div className="lg:col-span-2 bg-white dark:bg-zinc-900 
+<section className="grid grid-cols-1 lg:grid-cols-[60%_40%] gap-6">
+  <div className="bg-white dark:bg-zinc-900 
     border border-zinc-200 dark:border-zinc-800 
     rounded-xl p-8 shadow-sm">
 
