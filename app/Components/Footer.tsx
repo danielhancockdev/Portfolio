@@ -7,7 +7,7 @@ export default function Footer() {
       border-t border-zinc-200 dark:border-zinc-800 mt-8">
       
       <h1>
-        <b>2025</b> Copyright by Daniel Hancock, All Rights Reserved ©
+        <b>2025</b> Copyright by Daniel Hancock, All Rights Reserved © Hosted by Vercel, Powered and Developed by React, Prisma, Visual Studio Code
       </h1>
     </nav>
   );

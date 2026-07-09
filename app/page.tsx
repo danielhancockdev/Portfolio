@@ -82,7 +82,7 @@ dark:border-zinc-800 rounded-xl p-2 shadow-sm flex items-center justify-center">
                         Tools and Technology
                       </h3>
                       <p className="text-zinc-600 dark:text-zinc-400">
-                        Android Studio • Git • Github
+                        Android Studio • Git • Github • Visual Studio • Vercel
                       </p>
                     </div>
                     <div>
